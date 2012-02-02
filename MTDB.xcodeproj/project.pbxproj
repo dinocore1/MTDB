@@ -7,24 +7,28 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		DA75F3C414DA1C89009D423A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DA75F3C314DA1C89009D423A /* Foundation.framework */; };
-		DA75F3CA14DA1C89009D423A /* MTDB.m in Sources */ = {isa = PBXBuildFile; fileRef = DA75F3C914DA1C89009D423A /* MTDB.m */; };
+		DA10F4BB14DA217900FEA338 /* MTResultSet.m in Sources */ = {isa = PBXBuildFile; fileRef = DA10F4BA14DA217900FEA338 /* MTResultSet.m */; };
+		DA10F4BD14DA233800FEA338 /* MTResultSet.h in Headers */ = {isa = PBXBuildFile; fileRef = DA10F4B914DA217900FEA338 /* MTResultSet.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		DA75F3DC14DA1D41009D423A /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = DA75F3DA14DA1D41009D423A /* InfoPlist.strings */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		DA75F3C014DA1C89009D423A /* libMTDB.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libMTDB.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		DA10F4B714DA211000FEA338 /* MTDB-Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "MTDB-Prefix.pch"; sourceTree = "<group>"; };
+		DA10F4B914DA217900FEA338 /* MTResultSet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MTResultSet.h; sourceTree = "<group>"; };
+		DA10F4BA14DA217900FEA338 /* MTResultSet.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MTResultSet.m; sourceTree = "<group>"; };
 		DA75F3C314DA1C89009D423A /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
-		DA75F3C714DA1C89009D423A /* MTDB-Prefix.pch */ = {isa = PBXFileReference; path = "MTDB-Prefix.pch"; sourceTree = "<group>"; };
-		DA75F3C814DA1C89009D423A /* MTDB.h */ = {isa = PBXFileReference; path = MTDB.h; sourceTree = "<group>"; };
-		DA75F3C914DA1C89009D423A /* MTDB.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MTDB.m; sourceTree = "<group>"; };
+		DA75F3D414DA1D41009D423A /* MTDB.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MTDB.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		DA75F3D514DA1D41009D423A /* CoreFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreFoundation.framework; path = System/Library/Frameworks/CoreFoundation.framework; sourceTree = SDKROOT; };
+		DA75F3D914DA1D41009D423A /* MTDB-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "MTDB-Info.plist"; sourceTree = "<group>"; };
+		DA75F3DB14DA1D41009D423A /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		DA75F3DD14DA1D41009D423A /* MTDB-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "MTDB-Prefix.pch"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		DA75F3BD14DA1C89009D423A /* Frameworks */ = {
+		DA75F3D114DA1D41009D423A /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DA75F3C414DA1C89009D423A /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -34,7 +38,7 @@
 		DA75F3B514DA1C89009D423A = {
 			isa = PBXGroup;
 			children = (
-				DA75F3C514DA1C89009D423A /* MTDB */,
+				DA75F3D714DA1D41009D423A /* MTDB */,
 				DA75F3C214DA1C89009D423A /* Frameworks */,
 				DA75F3C114DA1C89009D423A /* Products */,
 			);
@@ -43,7 +47,7 @@
 		DA75F3C114DA1C89009D423A /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				DA75F3C014DA1C89009D423A /* libMTDB.a */,
+				DA75F3D414DA1D41009D423A /* MTDB.framework */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -52,24 +56,28 @@
 			isa = PBXGroup;
 			children = (
 				DA75F3C314DA1C89009D423A /* Foundation.framework */,
+				DA75F3D514DA1D41009D423A /* CoreFoundation.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		DA75F3C514DA1C89009D423A /* MTDB */ = {
+		DA75F3D714DA1D41009D423A /* MTDB */ = {
 			isa = PBXGroup;
 			children = (
-				DA75F3C814DA1C89009D423A /* MTDB.h */,
-				DA75F3C914DA1C89009D423A /* MTDB.m */,
-				DA75F3C614DA1C89009D423A /* Supporting Files */,
+				DA75F3D814DA1D41009D423A /* Supporting Files */,
+				DA10F4B714DA211000FEA338 /* MTDB-Prefix.pch */,
+				DA10F4B914DA217900FEA338 /* MTResultSet.h */,
+				DA10F4BA14DA217900FEA338 /* MTResultSet.m */,
 			);
 			path = MTDB;
 			sourceTree = "<group>";
 		};
-		DA75F3C614DA1C89009D423A /* Supporting Files */ = {
+		DA75F3D814DA1D41009D423A /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				DA75F3C714DA1C89009D423A /* MTDB-Prefix.pch */,
+				DA75F3D914DA1D41009D423A /* MTDB-Info.plist */,
+				DA75F3DA14DA1D41009D423A /* InfoPlist.strings */,
+				DA75F3DD14DA1D41009D423A /* MTDB-Prefix.pch */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -77,23 +85,25 @@
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
-		DA75F3BE14DA1C89009D423A /* Headers */ = {
+		DA10F4BC14DA22F400FEA338 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DA10F4BD14DA233800FEA338 /* MTResultSet.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
-		DA75F3BF14DA1C89009D423A /* MTDB */ = {
+		DA75F3D314DA1D41009D423A /* MTDB */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = DA75F3CD14DA1C89009D423A /* Build configuration list for PBXNativeTarget "MTDB" */;
+			buildConfigurationList = DA75F3DE14DA1D41009D423A /* Build configuration list for PBXNativeTarget "MTDB" */;
 			buildPhases = (
-				DA75F3BC14DA1C89009D423A /* Sources */,
-				DA75F3BD14DA1C89009D423A /* Frameworks */,
-				DA75F3BE14DA1C89009D423A /* Headers */,
+				DA75F3D014DA1D41009D423A /* Sources */,
+				DA75F3D114DA1D41009D423A /* Frameworks */,
+				DA75F3D214DA1D41009D423A /* Resources */,
+				DA10F4BC14DA22F400FEA338 /* Headers */,
 			);
 			buildRules = (
 			);
@@ -101,8 +111,8 @@
 			);
 			name = MTDB;
 			productName = MTDB;
-			productReference = DA75F3C014DA1C89009D423A /* libMTDB.a */;
-			productType = "com.apple.product-type.library.static";
+			productReference = DA75F3D414DA1D41009D423A /* MTDB.framework */;
+			productType = "com.apple.product-type.bundle";
 		};
 /* End PBXNativeTarget section */
 
@@ -124,21 +134,43 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				DA75F3BF14DA1C89009D423A /* MTDB */,
+				DA75F3D314DA1D41009D423A /* MTDB */,
 			);
 		};
 /* End PBXProject section */
 
+/* Begin PBXResourcesBuildPhase section */
+		DA75F3D214DA1D41009D423A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DA75F3DC14DA1D41009D423A /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
-		DA75F3BC14DA1C89009D423A /* Sources */ = {
+		DA75F3D014DA1D41009D423A /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DA75F3CA14DA1C89009D423A /* MTDB.m in Sources */,
+				DA10F4BB14DA217900FEA338 /* MTResultSet.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		DA75F3DA14DA1D41009D423A /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				DA75F3DB14DA1D41009D423A /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		DA75F3CB14DA1C89009D423A /* Debug */ = {
@@ -148,6 +180,7 @@
 				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
 				CLANG_ENABLE_OBJC_ARC = YES;
 				COPY_PHASE_STRIP = NO;
+				DEAD_CODE_STRIPPING = NO;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_OPTIMIZATION_LEVEL = 0;
@@ -156,11 +189,12 @@
 					"$(inherited)",
 				);
 				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
-				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_VERSION = "";
 				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 3.0;
+				MACH_O_TYPE = mh_object;
 				SDKROOT = iphoneos;
 			};
 			name = Debug;
@@ -172,38 +206,53 @@
 				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
 				CLANG_ENABLE_OBJC_ARC = YES;
 				COPY_PHASE_STRIP = YES;
+				DEAD_CODE_STRIPPING = NO;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
-				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_VERSION = "";
 				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 3.0;
+				MACH_O_TYPE = mh_object;
 				SDKROOT = iphoneos;
 				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;
 		};
-		DA75F3CE14DA1C89009D423A /* Debug */ = {
+		DA75F3DF14DA1D41009D423A /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				DSTROOT = /tmp/MTDB.dst;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "MTDB/MTDB-Prefix.pch";
-				OTHER_LDFLAGS = "-ObjC";
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				INFOPLIST_FILE = "MTDB/MTDB-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Bundles";
+				MACOSX_DEPLOYMENT_TARGET = "";
+				ONLY_ACTIVE_ARCH = NO;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SKIP_INSTALL = YES;
+				SDKROOT = iphoneos;
+				WRAPPER_EXTENSION = framework;
 			};
 			name = Debug;
 		};
-		DA75F3CF14DA1C89009D423A /* Release */ = {
+		DA75F3E014DA1D41009D423A /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				DSTROOT = /tmp/MTDB.dst;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "MTDB/MTDB-Prefix.pch";
-				OTHER_LDFLAGS = "-ObjC";
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				INFOPLIST_FILE = "MTDB/MTDB-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Bundles";
+				MACOSX_DEPLOYMENT_TARGET = "";
+				ONLY_ACTIVE_ARCH = NO;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SKIP_INSTALL = YES;
+				SDKROOT = iphoneos;
+				WRAPPER_EXTENSION = framework;
 			};
 			name = Release;
 		};
@@ -219,13 +268,14 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		DA75F3CD14DA1C89009D423A /* Build configuration list for PBXNativeTarget "MTDB" */ = {
+		DA75F3DE14DA1D41009D423A /* Build configuration list for PBXNativeTarget "MTDB" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				DA75F3CE14DA1C89009D423A /* Debug */,
-				DA75F3CF14DA1C89009D423A /* Release */,
+				DA75F3DF14DA1D41009D423A /* Debug */,
+				DA75F3E014DA1D41009D423A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
