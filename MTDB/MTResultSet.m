@@ -10,4 +10,8 @@
 
 @implementation MTResultSet
 
+@synthesize query;
+@synthesize columnNameToIndexMap;
+@synthesize statement;
+
 @end

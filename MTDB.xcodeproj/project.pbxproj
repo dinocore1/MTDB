@@ -6,9 +6,28 @@
 	objectVersion = 46;
 	objects = {
 
+/* Begin PBXAggregateTarget section */
+		DA10F4BE14DA26A400FEA338 /* MTDB Universal Framework */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = DA10F4BF14DA26A400FEA338 /* Build configuration list for PBXAggregateTarget "MTDB Universal Framework" */;
+			buildPhases = (
+				DA10F4C214DA26D100FEA338 /* ShellScript */,
+			);
+			dependencies = (
+			);
+			name = "MTDB Universal Framework";
+			productName = "MTDB Universal Framework";
+		};
+/* End PBXAggregateTarget section */
+
 /* Begin PBXBuildFile section */
 		DA10F4BB14DA217900FEA338 /* MTResultSet.m in Sources */ = {isa = PBXBuildFile; fileRef = DA10F4BA14DA217900FEA338 /* MTResultSet.m */; };
 		DA10F4BD14DA233800FEA338 /* MTResultSet.h in Headers */ = {isa = PBXBuildFile; fileRef = DA10F4B914DA217900FEA338 /* MTResultSet.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		DA10F4C414DA299F00FEA338 /* libsqlite3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = DA10F4C314DA299F00FEA338 /* libsqlite3.dylib */; };
+		DA10F4C714DA2AE900FEA338 /* MTStatement.h in Headers */ = {isa = PBXBuildFile; fileRef = DA10F4C514DA2AE900FEA338 /* MTStatement.h */; };
+		DA10F4C814DA2AE900FEA338 /* MTStatement.m in Sources */ = {isa = PBXBuildFile; fileRef = DA10F4C614DA2AE900FEA338 /* MTStatement.m */; };
+		DA10F4CB14DA2B9600FEA338 /* MTDatabase.h in Headers */ = {isa = PBXBuildFile; fileRef = DA10F4C914DA2B9600FEA338 /* MTDatabase.h */; };
+		DA10F4CC14DA2B9600FEA338 /* MTDatabase.m in Sources */ = {isa = PBXBuildFile; fileRef = DA10F4CA14DA2B9600FEA338 /* MTDatabase.m */; };
 		DA75F3DC14DA1D41009D423A /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = DA75F3DA14DA1D41009D423A /* InfoPlist.strings */; };
 /* End PBXBuildFile section */
 
@@ -16,6 +35,11 @@
 		DA10F4B714DA211000FEA338 /* MTDB-Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "MTDB-Prefix.pch"; sourceTree = "<group>"; };
 		DA10F4B914DA217900FEA338 /* MTResultSet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MTResultSet.h; sourceTree = "<group>"; };
 		DA10F4BA14DA217900FEA338 /* MTResultSet.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MTResultSet.m; sourceTree = "<group>"; };
+		DA10F4C314DA299F00FEA338 /* libsqlite3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsqlite3.dylib; path = usr/lib/libsqlite3.dylib; sourceTree = SDKROOT; };
+		DA10F4C514DA2AE900FEA338 /* MTStatement.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MTStatement.h; sourceTree = "<group>"; };
+		DA10F4C614DA2AE900FEA338 /* MTStatement.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MTStatement.m; sourceTree = "<group>"; };
+		DA10F4C914DA2B9600FEA338 /* MTDatabase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MTDatabase.h; sourceTree = "<group>"; };
+		DA10F4CA14DA2B9600FEA338 /* MTDatabase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MTDatabase.m; sourceTree = "<group>"; };
 		DA75F3C314DA1C89009D423A /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		DA75F3D414DA1D41009D423A /* MTDB.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MTDB.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		DA75F3D514DA1D41009D423A /* CoreFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreFoundation.framework; path = System/Library/Frameworks/CoreFoundation.framework; sourceTree = SDKROOT; };
@@ -29,6 +53,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DA10F4C414DA299F00FEA338 /* libsqlite3.dylib in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -55,6 +80,7 @@
 		DA75F3C214DA1C89009D423A /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				DA10F4C314DA299F00FEA338 /* libsqlite3.dylib */,
 				DA75F3C314DA1C89009D423A /* Foundation.framework */,
 				DA75F3D514DA1D41009D423A /* CoreFoundation.framework */,
 			);
@@ -68,6 +94,10 @@
 				DA10F4B714DA211000FEA338 /* MTDB-Prefix.pch */,
 				DA10F4B914DA217900FEA338 /* MTResultSet.h */,
 				DA10F4BA14DA217900FEA338 /* MTResultSet.m */,
+				DA10F4C514DA2AE900FEA338 /* MTStatement.h */,
+				DA10F4C614DA2AE900FEA338 /* MTStatement.m */,
+				DA10F4C914DA2B9600FEA338 /* MTDatabase.h */,
+				DA10F4CA14DA2B9600FEA338 /* MTDatabase.m */,
 			);
 			path = MTDB;
 			sourceTree = "<group>";
@@ -90,6 +120,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				DA10F4BD14DA233800FEA338 /* MTResultSet.h in Headers */,
+				DA10F4C714DA2AE900FEA338 /* MTStatement.h in Headers */,
+				DA10F4CB14DA2B9600FEA338 /* MTDatabase.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -135,6 +167,7 @@
 			projectRoot = "";
 			targets = (
 				DA75F3D314DA1D41009D423A /* MTDB */,
+				DA10F4BE14DA26A400FEA338 /* MTDB Universal Framework */,
 			);
 		};
 /* End PBXProject section */
@@ -150,12 +183,30 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		DA10F4C214DA26D100FEA338 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Sets the target folders and the final framework product.\nFMK_NAME=MTDB\nFMK_VERSION=A\n\n# Install dir will be the final output to the framework.\n# The following line create it in the root folder of the current project.\nINSTALL_DIR=${SRCROOT}/Products/${FMK_NAME}.framework\n\n# Working dir will be deleted after the framework creation.\nWRK_DIR=build\nDEVICE_DIR=${WRK_DIR}/Release-iphoneos/${FMK_NAME}.framework\nSIMULATOR_DIR=${WRK_DIR}/Release-iphonesimulator/${FMK_NAME}.framework\n\n# Building both architectures.\nxcodebuild -configuration \"Release\" -target \"${FMK_NAME}\" -sdk iphoneos\nxcodebuild -configuration \"Release\" -target \"${FMK_NAME}\" -sdk iphonesimulator\n\n# Cleaning the oldest.\nif [ -d \"${INSTALL_DIR}\" ]\nthen\nrm -rf \"${INSTALL_DIR}\"\nfi\n\n# Creates and renews the final product folder.\nmkdir -p \"${INSTALL_DIR}\"\nmkdir -p \"${INSTALL_DIR}/Versions\"\nmkdir -p \"${INSTALL_DIR}/Versions/${FMK_VERSION}\"\nmkdir -p \"${INSTALL_DIR}/Versions/${FMK_VERSION}/Resources\"\nmkdir -p \"${INSTALL_DIR}/Versions/${FMK_VERSION}/Headers\"\n\n# Creates the internal links.\n# It MUST uses relative path, otherwise will not work when the folder is copied/moved.\nln -s \"${FMK_VERSION}\" \"${INSTALL_DIR}/Versions/Current\"\nln -s \"Versions/Current/Headers\" \"${INSTALL_DIR}/Headers\"\nln -s \"Versions/Current/Resources\" \"${INSTALL_DIR}/Resources\"\nln -s \"Versions/Current/${FMK_NAME}\" \"${INSTALL_DIR}/${FMK_NAME}\"\n\n# Copies the headers and resources files to the final product folder.\ncp -R \"${DEVICE_DIR}/Headers/\" \"${INSTALL_DIR}/Versions/${FMK_VERSION}/Headers/\"\ncp -R \"${DEVICE_DIR}/\" \"${INSTALL_DIR}/Versions/${FMK_VERSION}/Resources/\"\n\n# Removes the binary and header from the resources folder.\nrm -r \"${INSTALL_DIR}/Versions/${FMK_VERSION}/Resources/Headers\" \"${INSTALL_DIR}/Versions/${FMK_VERSION}/Resources/${FMK_NAME}\"\n\n# Uses the Lipo Tool to merge both binary files (i386 + armv6/armv7) into one Universal final product.\nlipo -create \"${DEVICE_DIR}/${FMK_NAME}\" \"${SIMULATOR_DIR}/${FMK_NAME}\" -output \"${INSTALL_DIR}/Versions/${FMK_VERSION}/${FMK_NAME}\"\n\nrm -r \"${WRK_DIR}\"";
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		DA75F3D014DA1D41009D423A /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				DA10F4BB14DA217900FEA338 /* MTResultSet.m in Sources */,
+				DA10F4C814DA2AE900FEA338 /* MTStatement.m in Sources */,
+				DA10F4CC14DA2B9600FEA338 /* MTDatabase.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -173,12 +224,26 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		DA10F4C014DA26A400FEA338 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		DA10F4C114DA26A400FEA338 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
 		DA75F3CB14DA1C89009D423A /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
-				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_ARC = NO;
 				COPY_PHASE_STRIP = NO;
 				DEAD_CODE_STRIPPING = NO;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
@@ -196,6 +261,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 3.0;
 				MACH_O_TYPE = mh_object;
 				SDKROOT = iphoneos;
+				VALID_ARCHS = "armv6 armv7";
 			};
 			name = Debug;
 		};
@@ -204,7 +270,7 @@
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
-				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_ARC = NO;
 				COPY_PHASE_STRIP = YES;
 				DEAD_CODE_STRIPPING = NO;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
@@ -216,6 +282,7 @@
 				MACH_O_TYPE = mh_object;
 				SDKROOT = iphoneos;
 				VALIDATE_PRODUCT = YES;
+				VALID_ARCHS = "armv6 armv7";
 			};
 			name = Release;
 		};
@@ -233,6 +300,7 @@
 				ONLY_ACTIVE_ARCH = NO;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = iphoneos;
+				VALID_ARCHS = "armv6 armv7";
 				WRAPPER_EXTENSION = framework;
 			};
 			name = Debug;
@@ -252,6 +320,7 @@
 				ONLY_ACTIVE_ARCH = NO;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = iphoneos;
+				VALID_ARCHS = "armv6 armv7";
 				WRAPPER_EXTENSION = framework;
 			};
 			name = Release;
@@ -259,6 +328,14 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		DA10F4BF14DA26A400FEA338 /* Build configuration list for PBXAggregateTarget "MTDB Universal Framework" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DA10F4C014DA26A400FEA338 /* Debug */,
+				DA10F4C114DA26A400FEA338 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
 		DA75F3BA14DA1C89009D423A /* Build configuration list for PBXProject "MTDB" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
