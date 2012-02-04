@@ -7,12 +7,11 @@
 //
 
 
-@class MTDatabase;
-@class MTStatement;
+@class MTConnection;
 
 @interface MTResultSet : NSObject {
-    MTDatabase *parentDB;
-    MTStatement *statement;
+    MTConnection *connection;
+    sqlite3_stmt *statement;
     
     NSString *query;
     NSMutableDictionary *columnNameToIndexMap;
@@ -21,13 +20,10 @@
 
 @property (retain) NSString *query;
 @property (retain) NSMutableDictionary *columnNameToIndexMap;
-@property (retain) MTStatement *statement;
 
-+ (id)resultSetWithStatement:(MTStatement *)statement usingParentDatabase:(MTDatabase*)aDB;
++ (id)resultSetWithStatement:(sqlite3_stmt *)statement usingParentConnection:(MTConnection *)aConnection;
 
 - (void)close;
-
-- (void)setParentDB:(MTDatabase *)newDb;
 
 - (BOOL)next;
 - (BOOL)hasAnotherRow;

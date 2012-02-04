@@ -28,6 +28,8 @@
 		DA10F4C814DA2AE900FEA338 /* MTStatement.m in Sources */ = {isa = PBXBuildFile; fileRef = DA10F4C614DA2AE900FEA338 /* MTStatement.m */; };
 		DA10F4CB14DA2B9600FEA338 /* MTDatabase.h in Headers */ = {isa = PBXBuildFile; fileRef = DA10F4C914DA2B9600FEA338 /* MTDatabase.h */; };
 		DA10F4CC14DA2B9600FEA338 /* MTDatabase.m in Sources */ = {isa = PBXBuildFile; fileRef = DA10F4CA14DA2B9600FEA338 /* MTDatabase.m */; };
+		DA35156414DD84E1004DF795 /* MTConnection.h in Headers */ = {isa = PBXBuildFile; fileRef = DA35156214DD84E1004DF795 /* MTConnection.h */; };
+		DA35156514DD84E1004DF795 /* MTConnection.m in Sources */ = {isa = PBXBuildFile; fileRef = DA35156314DD84E1004DF795 /* MTConnection.m */; };
 		DA75F3DC14DA1D41009D423A /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = DA75F3DA14DA1D41009D423A /* InfoPlist.strings */; };
 /* End PBXBuildFile section */
 
@@ -40,6 +42,8 @@
 		DA10F4C614DA2AE900FEA338 /* MTStatement.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MTStatement.m; sourceTree = "<group>"; };
 		DA10F4C914DA2B9600FEA338 /* MTDatabase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MTDatabase.h; sourceTree = "<group>"; };
 		DA10F4CA14DA2B9600FEA338 /* MTDatabase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MTDatabase.m; sourceTree = "<group>"; };
+		DA35156214DD84E1004DF795 /* MTConnection.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MTConnection.h; sourceTree = "<group>"; };
+		DA35156314DD84E1004DF795 /* MTConnection.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MTConnection.m; sourceTree = "<group>"; };
 		DA75F3C314DA1C89009D423A /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		DA75F3D414DA1D41009D423A /* MTDB.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MTDB.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		DA75F3D514DA1D41009D423A /* CoreFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreFoundation.framework; path = System/Library/Frameworks/CoreFoundation.framework; sourceTree = SDKROOT; };
@@ -98,6 +102,8 @@
 				DA10F4C614DA2AE900FEA338 /* MTStatement.m */,
 				DA10F4C914DA2B9600FEA338 /* MTDatabase.h */,
 				DA10F4CA14DA2B9600FEA338 /* MTDatabase.m */,
+				DA35156214DD84E1004DF795 /* MTConnection.h */,
+				DA35156314DD84E1004DF795 /* MTConnection.m */,
 			);
 			path = MTDB;
 			sourceTree = "<group>";
@@ -122,6 +128,7 @@
 				DA10F4BD14DA233800FEA338 /* MTResultSet.h in Headers */,
 				DA10F4C714DA2AE900FEA338 /* MTStatement.h in Headers */,
 				DA10F4CB14DA2B9600FEA338 /* MTDatabase.h in Headers */,
+				DA35156414DD84E1004DF795 /* MTConnection.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -207,6 +214,7 @@
 				DA10F4BB14DA217900FEA338 /* MTResultSet.m in Sources */,
 				DA10F4C814DA2AE900FEA338 /* MTStatement.m in Sources */,
 				DA10F4CC14DA2B9600FEA338 /* MTDatabase.m in Sources */,
+				DA35156514DD84E1004DF795 /* MTConnection.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -335,6 +343,7 @@
 				DA10F4C114DA26A400FEA338 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		DA75F3BA14DA1C89009D423A /* Build configuration list for PBXProject "MTDB" */ = {
 			isa = XCConfigurationList;

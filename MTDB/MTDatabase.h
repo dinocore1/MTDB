@@ -22,6 +22,6 @@
 - (void) executeQuery:(NSString*)sql, ...;
 - (BOOL) performTransaction: (BOOL (^)())block;
 
-@property (retain) NSString* databasePath;
+@property (readonly) NSString* databasePath;
 
 @end
