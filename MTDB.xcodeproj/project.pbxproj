@@ -24,8 +24,6 @@
 		DA10F4BB14DA217900FEA338 /* MTResultSet.m in Sources */ = {isa = PBXBuildFile; fileRef = DA10F4BA14DA217900FEA338 /* MTResultSet.m */; };
 		DA10F4BD14DA233800FEA338 /* MTResultSet.h in Headers */ = {isa = PBXBuildFile; fileRef = DA10F4B914DA217900FEA338 /* MTResultSet.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		DA10F4C414DA299F00FEA338 /* libsqlite3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = DA10F4C314DA299F00FEA338 /* libsqlite3.dylib */; };
-		DA10F4C714DA2AE900FEA338 /* MTStatement.h in Headers */ = {isa = PBXBuildFile; fileRef = DA10F4C514DA2AE900FEA338 /* MTStatement.h */; };
-		DA10F4C814DA2AE900FEA338 /* MTStatement.m in Sources */ = {isa = PBXBuildFile; fileRef = DA10F4C614DA2AE900FEA338 /* MTStatement.m */; };
 		DA10F4CB14DA2B9600FEA338 /* MTDatabase.h in Headers */ = {isa = PBXBuildFile; fileRef = DA10F4C914DA2B9600FEA338 /* MTDatabase.h */; };
 		DA10F4CC14DA2B9600FEA338 /* MTDatabase.m in Sources */ = {isa = PBXBuildFile; fileRef = DA10F4CA14DA2B9600FEA338 /* MTDatabase.m */; };
 		DA35156414DD84E1004DF795 /* MTConnection.h in Headers */ = {isa = PBXBuildFile; fileRef = DA35156214DD84E1004DF795 /* MTConnection.h */; };
@@ -38,8 +36,6 @@
 		DA10F4B914DA217900FEA338 /* MTResultSet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MTResultSet.h; sourceTree = "<group>"; };
 		DA10F4BA14DA217900FEA338 /* MTResultSet.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MTResultSet.m; sourceTree = "<group>"; };
 		DA10F4C314DA299F00FEA338 /* libsqlite3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsqlite3.dylib; path = usr/lib/libsqlite3.dylib; sourceTree = SDKROOT; };
-		DA10F4C514DA2AE900FEA338 /* MTStatement.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MTStatement.h; sourceTree = "<group>"; };
-		DA10F4C614DA2AE900FEA338 /* MTStatement.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MTStatement.m; sourceTree = "<group>"; };
 		DA10F4C914DA2B9600FEA338 /* MTDatabase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MTDatabase.h; sourceTree = "<group>"; };
 		DA10F4CA14DA2B9600FEA338 /* MTDatabase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MTDatabase.m; sourceTree = "<group>"; };
 		DA35156214DD84E1004DF795 /* MTConnection.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MTConnection.h; sourceTree = "<group>"; };
@@ -98,8 +94,6 @@
 				DA10F4B714DA211000FEA338 /* MTDB-Prefix.pch */,
 				DA10F4B914DA217900FEA338 /* MTResultSet.h */,
 				DA10F4BA14DA217900FEA338 /* MTResultSet.m */,
-				DA10F4C514DA2AE900FEA338 /* MTStatement.h */,
-				DA10F4C614DA2AE900FEA338 /* MTStatement.m */,
 				DA10F4C914DA2B9600FEA338 /* MTDatabase.h */,
 				DA10F4CA14DA2B9600FEA338 /* MTDatabase.m */,
 				DA35156214DD84E1004DF795 /* MTConnection.h */,
@@ -126,7 +120,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				DA10F4BD14DA233800FEA338 /* MTResultSet.h in Headers */,
-				DA10F4C714DA2AE900FEA338 /* MTStatement.h in Headers */,
 				DA10F4CB14DA2B9600FEA338 /* MTDatabase.h in Headers */,
 				DA35156414DD84E1004DF795 /* MTConnection.h in Headers */,
 			);
@@ -212,7 +205,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				DA10F4BB14DA217900FEA338 /* MTResultSet.m in Sources */,
-				DA10F4C814DA2AE900FEA338 /* MTStatement.m in Sources */,
 				DA10F4CC14DA2B9600FEA338 /* MTDatabase.m in Sources */,
 				DA35156514DD84E1004DF795 /* MTConnection.m in Sources */,
 			);

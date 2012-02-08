@@ -10,12 +10,15 @@
 
 @implementation MTConnection
 
+@synthesize transactionCount;
+
 - (id)initWithPath:(NSString*)aPath {
     self = [super init];
     
     if (self) {
         databasePath = [aPath copy];
-        db = 0x00;
+        db = nil;
+        transactionCount = 0;
     }
     
     return self;
@@ -295,6 +298,10 @@
     rc = sqlite3_finalize(pStmt);
     
     return (rc == SQLITE_OK);
+}
+
+- (sqlite3_int64) lastInsertedRowId {
+    return sqlite3_last_insert_rowid(db);
 }
 
 @end

@@ -18,6 +18,7 @@
 - (id)initWithPath:(NSString*)path;
 
 - (BOOL) executeUpdate:(NSString*)sql, ...;
+- (BOOL) executeUpdate:(NSString *)sql lastId:(sqlite3_int64*)rowId, ...;
 - (void) executeQuery:(NSString*)sql withArgArray:(NSArray*)arrayArgs block:(void (^)(MTResultSet* rs))block;
 - (void) executeQuery:(NSString*)sql, ...;
 - (BOOL) performTransaction: (BOOL (^)())block;

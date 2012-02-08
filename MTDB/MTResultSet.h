@@ -26,7 +26,6 @@
 - (void)close;
 
 - (BOOL)next;
-- (BOOL)hasAnotherRow;
 
 - (int)columnCount;
 

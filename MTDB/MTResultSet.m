@@ -7,6 +7,7 @@
 //
 
 #import "MTResultSet.h"
+#import "MTConnection.h"
 
 @implementation MTResultSet
 
@@ -19,7 +20,7 @@
 @end
 
 
-+ (id)resultSetWithStatement:(sqlite3_stmt *)statement usingParentDatabase:(MTConnection*)aConnection {
++ (id)resultSetWithStatement:(sqlite3_stmt *)statement usingParentConnection:(MTConnection*)aConnection {
     
     MTResultSet *rs = [[MTResultSet alloc] init];
     
@@ -119,7 +120,6 @@
     
     int rc;
     BOOL retry;
-    int numberOfRetries = 0;
     do {
         retry = NO;
         
@@ -141,17 +141,17 @@
             // all is well, let's return.
         }
         else if (SQLITE_ERROR == rc) {
-            NSLog(@"Error calling sqlite3_step (%d: %s) rs", rc, [connection lastErrorMessage]);
+            NSLog(@"Error calling sqlite3_step (%d: %@) rs", rc, [connection lastErrorMessage]);
             break;
         } 
         else if (SQLITE_MISUSE == rc) {
             // uh oh.
-            NSLog(@"Error calling sqlite3_step (%d: %s) rs", rc, sqlite3_errmsg([parentDB sqliteHandle]));
+            NSLog(@"Error calling sqlite3_step (%d: %@) rs", rc, [connection lastErrorMessage]);
             break;
         }
         else {
             // wtf?
-            NSLog(@"Unknown error calling sqlite3_step (%d: %s) rs", rc, sqlite3_errmsg([parentDB sqliteHandle]));
+            NSLog(@"Unknown error calling sqlite3_step (%d: %@) rs", rc, [connection lastErrorMessage]);
             break;
         }
         
@@ -165,9 +165,7 @@
     return (rc == SQLITE_ROW);
 }
 
-- (BOOL)hasAnotherRow {
-    return sqlite3_errcode([parentDB sqliteHandle]) == SQLITE_ROW;
-}
+
 
 - (int)columnIndexForName:(NSString*)columnName {
     

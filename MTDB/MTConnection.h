@@ -8,11 +8,11 @@
 
 #import <Foundation/Foundation.h>
 #import "MTResultSet.h"
-#import "MTStatement.h"
 
 @interface MTConnection : NSObject {
     sqlite3* db;
-    NSString*   databasePath;
+    NSString* databasePath;
+    int transactionCount;
 }
 
 - (id)initWithPath:(NSString*)inPath;
@@ -23,7 +23,13 @@
 #endif
 - (BOOL)close;
 
+- (NSString*)lastErrorMessage;
+
 - (MTResultSet *)executeQuery:(NSString *)sql withArgumentsInArray:(NSArray*)arrayArgs orVAList:(va_list)args;
-- (BOOL)executeUpdate:(NSString*)sql error:(NSError**)outErr withArgumentsInArray:(NSArray*)arrayArgs orVAList:(va_list)args
+- (BOOL)executeUpdate:(NSString*)sql error:(NSError**)outErr withArgumentsInArray:(NSArray*)arrayArgs orVAList:(va_list)args;
+
+- (sqlite3_int64) lastInsertedRowId; 
+
+@property int transactionCount;
 
 @end
