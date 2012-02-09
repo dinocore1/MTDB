@@ -7,7 +7,8 @@
 //
 
 #import <Foundation/Foundation.h>
-#import "MTResultSet.h"
+
+@class MTResultSet;
 
 @interface MTConnection : NSObject {
     sqlite3* db;

@@ -7,6 +7,7 @@
 //
 
 #import "MTConnection.h"
+#import "MTResultSet.h"
 
 @implementation MTConnection
 
